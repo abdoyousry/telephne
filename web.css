@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1366px;
+    height: 10vh;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+nav .logo{
+    display: flex;
+font-size: 2rem;  
+  align-items: center;
+    
+}
+i{
+    padding: 2px;
+    margin: 3px;
+    color: rgb(234, 0, 255);
+}
+h3{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+nav .nav-items{
+    display: flex;
+    padding: 0 1rem;
+}
+nav .nav-items .nav-item{
+    padding: 0 1rem;
+    list-style-type :none ;
+
+}
+nav .nav-link {
+    list-style-type: none;
+    padding: 2px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(184, 64, 154);
+    
+}
+nav .nav-link:hover{
+    color: #606a60;
+}
+/* one section */
+.section{
+    background-color: rgb(240, 240, 240);
+}
+.section .section-contint{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+.section .section-contint h4{
+    color: rgb(184, 64, 154);
+margin-bottom: 0.5rem;
+font-size: 1rem;
+}
+.section .section-contint h2{
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: black;
+}
+.section .section-contint p {
+    margin-bottom: 0.5rem;
+}
+.section .section-contint span{
+    color: rgb(184, 64, 154);
+
+}
+.section-contint .img{
+    margin-top: 15px;
+}
+.btn{
+    border-radius: 0.5rem;
+    width: 10rem;
+    background-color: blueviolet;
+    outline: none;
+    border: none; 
+    margin-top: 3rem;
+    padding: 0.75rem 1.5rem;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(128, 52, 199);
+}
+.btn a {
+    text-decoration: none;
+    color: rgb(245, 247, 248);
+    font-size: 1.4rem;
+}
+img{
+    outline: none;
+}
+/* section two */
+.gride section{
+    background-color: rgb(240, 240, 240);
+    padding: 2rem;
+    
+}
+.gride section .section-two {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: auto 5rem;
+}
+ .section-two h3 {
+    font-size: 1.5rem;
+    color: rgb(184, 64, 154);
+    margin-bottom: 1.5rem;
+
+}
+.section-two .qualites{
+    display: flex;
+    justify-content: space-between;
+}
+.section-two .quality{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 17rem;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 1rem;
+}
+.section-two .quality:hover{
+    cursor: pointer;
+    border: 2px solid #dd0fe4;
+}
+.section-two .quality i {
+    font-size: 1.5rem;
+}
+.section-two .quality h2 {
+    font-size: 1.5rem;
+}
+.section-two .quality p {
+    font-size: 1.2rem;
+    text-align: center;
+color: #899289; 
+margin-top: 5px;
+}
+/* mobile list section */
+.mobile-lists{
+    padding-top: 5px;
+    background-color: rgb(209, 214, 218);
+}
+.mobile-lists .phone-lists{
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+.mobile-lists .phone-lists h4{
+    color: #99069e;
+    font-size: 1.4rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+.mobile-lists .phone-lists .phons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 17rem;
+}
+.mobile-lists .phone-lists .phons .phone{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 2rem 0;
+    align-items: center;
+}
+.phone img:hover{
+    scale: 1.1  ;
+}
+.phone-lists button{
+    align-self: center;
+    max-width: 15rem;
+
+}
+.mobile-lists .phone-lists .phons h4{
+font-size: 1.5rem;
+}
+/* footer section */
+footer{
+    background-color: #c3ccc3;
+    margin-top: 5rem;
+}
+.footer-s{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 0 5rem;
+}
+.footer-s p {
+    font-size: 1.0rem;
+    color: #777c77;
+}
+.footer-s i{
+    color: #000;
+    margin-top: 0.9rem;
+}
+.footer-s i:hover{
+    color: #99069e;
+    cursor: pointer;
+}
+/* responsef */
+@media (max-width:877px){
+    .section-contint .img{
+        display: none;
+    }
+    *{
+        text-align: center;
+    }
+    .section-contint{
+        align-items: center;
+        width: 50%;
+    }
+    .section-contint .contint{
+        margin-top: 3rem;
+        font-size: 80%;
+        align-items: center;
+        height: 70vh;
+        width: 17rem;
+    }
+    .section .section-contint h2{
+        font-size: 1.5rem;
+    }
+    
+    .section-contint .contint .btn{
+        margin-bottom: 3rem;
+        align-self: center;
+    }
+    .section-two .qualites{
+        font-size: 70%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .section-two .qualites .quality{
+        font-size: 75%;
+        /* flex-wrap: wrap; */
+
+    }
+    .phone-lists{
+        align-items: center;
+    }
+    .mobile-lists .phone-lists .phons{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        max-width: 14rem;
+        align-items:center ;
+        
+    }
+    .mobile-lists .phone-lists .phons .phone{
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        margin: 2rem 0;
+        align-items: center;
+    }
+}
+@media (max-width: 700px){
+    .mobile-lists .phone-lists .phons .phone{
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        margin: 2rem 0;
+        align-items: center;
+    }
+    .mobile-lists .phone-lists .phons{
+        display: grid;
+        grid-template-columns:  1fr ;
+        max-width: 10rem;
+        align-items:center ;
+        
+    }
+}
+
+@media (max-width: 500px){
+    .mobile-lists .phone-lists .phons .phone{
+        display: flex;
+        flex-direction: column;
+        max-width: 150px;
+        margin: 2rem 0;
+        align-items: center;
+    }
+    .mobile-lists .phone-lists .phons{
+        /* display: grid; */
+        grid-template-columns:  1fr ;
+        /* max-width: 10rem; */
+        align-items:center ;
+                
+    }
+}
